@@ -1,7 +1,7 @@
 site_name: Duc Jeremy | Portfolio
-site_url: https://jijiduc.github.io/votre-repo/
-repo_url: https://github.com/votre-username/votre-repo
-repo_name: GitHub
+site_url: https://github.com/jijiduc/portfolio/
+repo_url: https://github.com/Toys-R-Us-Rex/Duckify
+repo_name: Duckify
 
 theme:
   name: material
