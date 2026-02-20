@@ -4,45 +4,45 @@
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![MkDocs](https://img.shields.io/badge/built%20with-MkDocs-green)
 
-This repository contains the source code and technical documentation for my personal portfolio.
-The site is statically generated via **MkDocs** with the **Material** theme, hosted on GitHub Pages.
+Ce dépôt contient le code source et la documentation technique de mon portfolio personnel.
+Le site est généré statiquement via **MkDocs** avec le thème **Material**, hébergé sur GitHub Pages.
 
-🔗 **Live Version:** [https://jijiduc.github.io/portfolio/]
+🔗 **Version Live :** [https://jijiduc.github.io/portfolio/]
 
 ## Architecture
 
-This project follows the **Docs as Code** approach.
-- **Engine:** MkDocs (Python)
-- **Theme:** Material for MkDocs
-- **Math:** MathJax & LaTeX support
-- **Deployment:** GitHub Actions (CI/CD)
+Ce projet suit l'approche **Docs as Code**.
+- **Moteur :** MkDocs (Python)
+- **Thème :** Material for MkDocs
+- **Maths :** MathJax & LaTeX support
+- **Déploiement :** GitHub Actions (CI/CD)
 
-## Local Installation
+## Installation Locale
 
-To preview the site or contribute to the documentation:
+Pour prévisualiser le site ou contribuer à la documentation :
 
-### 1. Prerequisites
-- Python 3.8 or higher
+### 1. Prérequis
+- Python 3.8 ou supérieur
 - Git
 
-### 2. Initialization
+### 2. Initialisation
 ```bash
-# Clone the repository
+# Cloner le dépôt
 git clone https://github.com/jijiduc/portfolio.git
 cd portfolio
 
-# Create a virtual environment (Recommended)
+# Créer un environnement virtuel (Recommandé)
 python -m venv venv
 venv\Scripts\activate
 
-# Install dependencies
+# Installer les dépendances
 pip install mkdocs-material
 
-### 3. Run the development server
+### 3. Lancer le serveur de développement
 mkdocs serve
 ```
-The site will be accessible at [the following address](http://127.0.0.1:8000/).
+Le site sera accessible à [l'adresse suivante](http://127.0.0.1:8000/).
 
-## Deployment
-Deployment is fully automated.
-Every push to the main branch triggers the GitHub Actions workflow defined in `.github/workflows/ci.yml`, which compiles Markdown into HTML and publishes it to the `gh-pages` branch.
+## Déploiement
+Le déploiement est entièrement automatisé.
+Tout push sur la branche main déclenche le workflow GitHub Actions défini dans `.github/workflows/ci.yml`, qui compile le Markdown en HTML et le publie sur la branche `gh-pages`.
