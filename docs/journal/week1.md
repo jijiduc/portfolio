@@ -11,12 +11,14 @@
     * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/1787a64b540681b7a8b219607760a1050d72c1cd/docs/planning/steps_milestones.typ)
     * *Justification:* It is necessary to have a plan of the general project evolution. This enable to anticipate difficult section to come, thus allowing to redistribute working force if needed. It also help to ensure that no unseen dependencies between teams are leftover.
     * *Skill related:* analysing a complex IT problem | communicate clearly and effectively
+---
 
 * **Tracing team planification**
     * *Action:* Took part in the tracing team planification to lay out a pipeline overview. 
     * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ)
     * *Justification:* This overview is a 1rst step in the tracing pipeline construction. This lay out a complete road to follow.
     * *Skill related:* design a theoretical modelled solution
+---
 
 * **Research**
     * *Action:* Research a solution for texture projection solution, as this step was defined in the [General overview of the tracing process (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ.)
@@ -24,6 +26,8 @@
     * *Justification:* Taking time before implementation to look out for a complete solution 
     * *Result:* Promising solution found, tested but not selected
     * *Skill related:* Evaluate an IT system 
+
+---
 
 * **Meeting report**
     * *Action:* Make a summary of a daily/weekly meeting
@@ -33,10 +37,14 @@
     * *Justification:* Need of documentation to have the overview of project evolution
     * *Skill related:* communicate clearly and effectively
 
+---
+
 ## Blocker & resolution
 
 * **Problem:** The TEXTurePaper solution is a 2023 repo with multiple unprecised dependencies version. This made the enviromment setup error prone.
 * **Solution:** First, always look in the repo issues if same problem have already been solved. If not, then find dependencies versions that work with the current system based of plausible time of implementation. Use a docker container to run the whole in closed environement.
+
+---
 
 * **Problem:** The TEXTurePaper solution used models versions not hosted anymore and specificly configured for depth.
 * **Solution:** Look for alternative internet hosted models version that still exist.
@@ -48,11 +56,15 @@
 - I was able to find a promising solution for the texture projection problem
 - The global team work atmosphere was productive and the team is thriving toward objectives
 
+---
+
 > **What could be improved?**
 
 - The time spent in meeting was sometimes not efficient, I could have been more proactive to insist on the productivity and the shortness of the meetings
 - The reflections should have as granularity as possible to ensure a definitve coverage of the problem to solve and solution to it.
 - Always be alert of the edge-cases of the task I'm working on
+
+---
 
 > **What did you learn?**
 
@@ -61,6 +73,7 @@
 - that when testing a plausible solution, I should always push up to 5-10 cases to be able to quantify complexity
 - that plausible solution are sometimes a mirage. They may not be usable anymore.
 
+---
 
 ## Proposal of interview questions
 
@@ -68,10 +81,16 @@
 
 **A:** I will use it's google scholar references to search for newer research based on the promising solution.
 
+---
+
 **Q2: Why could TEXTure have been a suitable solution for this project?**
 
 **A:** TEXTure was a suitable solution because it is specifically designed for texture projection in 3D environments. The outputs were corresponding to our needs : a UV map of the projected texture and the texture itself in picture format. The rendering time on Calypso was in range of usage (approx. 10 min.).
 
+---
+
 **Q3: How would you approach a situation where a meeting is not led properly?**
 
 **A:** I would take the initiative to lead the meeting. I would first reclarify the meeting's objectives and agenda, then ensure that it stays on track and that all participants have the opportunity to contribute.
+
+---
