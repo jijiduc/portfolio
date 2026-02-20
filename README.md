@@ -6,4 +6,4 @@
 Source code for my personal portfolio.
 The page is generated using **MkDocs** with the **Material** theme. It is hosted on GitHub Pages.
 
-**Live Version:** [https://jijiduc.github.io/portfolio/]
+[live version link](https://jijiduc.github.io/portfolio/)
