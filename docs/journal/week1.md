@@ -10,19 +10,20 @@
     * *Action:* Took part in the general project planification to define milestones per week. 
     * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/1787a64b540681b7a8b219607760a1050d72c1cd/docs/planning/steps_milestones.typ)
     * *Justification:* It is necessary to have a plan of the general project evolution. This enable to anticipate difficult section to come, thus allowing to redistribute working force if needed. It also help to ensure that no unseen dependencies between teams are leftover.
-    * *Skill related* communicate clearly and effectively
+    * *Skill related:* analysing a complex IT problem | communicate clearly and effectively
 
 * **Tracing team planification**
     * *Action:* Took part in the tracing team planification to lay out a pipeline overview. 
     * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ)
     * *Justification:* This overview is a 1rst step in the tracing pipeline construction. This lay out a complete road to follow.
-    * *Skill related* design a theoretical modelled solution
+    * *Skill related:* design a theoretical modelled solution
 
 * **Research**
     * *Action:* Research a solution for texture projection solution, as this step was defined in the [General overview of the tracing process (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ.)
     * *Artefacts:* [Research report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/15c1dbc08bc9060aa37bc681666f70380cd02b3d/docs/research/projection_solution.typ)
     * *Justification:* Taking time before implementation to look out for a complete solution 
-    * *Result:* Promising solution found, tested but not selected.
+    * *Result:* Promising solution found, tested but not selected
+    * *Skill related:* Evaluate an IT system 
 
 * **Meeting report**
     * *Action:* Make a summary of a daily/weekly meeting
@@ -30,8 +31,9 @@
         * [Daily meeting report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/be49ae5f111835d253c54c89245da1a22305db2c/docs/meetings/2026-02-19.typ)
         * [Weekly meeting report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/26aa4719fd0279bd80cab682a85882558017a31d/docs/meetings/weekly/2026-02-20.typ)
     * *Justification:* Need of documentation to have the overview of project evolution
+    * *Skill related:* communicate clearly and effectively
 
-## Blocker/Resolution
+## Blocker & resolution
 
 * **Problem:** The TEXTurePaper solution is a 2023 repo with multiple unprecised dependencies version. This made the enviromment setup error prone.
 * **Solution:** First, always look in the repo issues if same problem have already been solved. If not, then find dependencies versions that work with the current system based of plausible time of implementation. Use a docker container to run the whole in closed environement.
@@ -40,24 +42,27 @@
 * **Solution:** Look for alternative internet hosted models version that still exist.
 
 
-## Self-Reflection
+## Self-reflection
 > **What went well?**
 
-I was able to find a promising complete solution for the texture projection problem.
+- I was able to find a promising solution for the texture projection problem
+- The global team work atmosphere was productive and the team is thriving toward objectives
 
 > **What could be improved?**
 
-The time spent in meeting was sometimes not efficient, I could have been more proactive to insist on the productivity and the shortness of the meetings.
+- The time spent in meeting was sometimes not efficient, I could have been more proactive to insist on the productivity and the shortness of the meetings
+- The reflections should have as granularity as possible to ensure a definitve coverage of the problem to solve and solution to it.
+- Always be alert of the edge-cases of the task I'm working on
 
 > **What did you learn?**
 
-I learned :
 - that I should always have existing sources of a displayed information in presentation
 - that arguing about "what we will produce/not produce" is only a client's privilege
 - that when testing a plausible solution, I should always push up to 5-10 cases to be able to quantify complexity
+- that plausible solution are sometimes a mirage. They may not be usable anymore.
 
 
-## Possible Interview Questions
+## Proposal of interview questions
 
 **Q1: Looking for an existing solution to your problem, you find a promising one but it seems old-dated, what do you do ?**
 
