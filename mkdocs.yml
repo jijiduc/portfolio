@@ -5,27 +5,25 @@ repo_name: Duckify
 
 theme:
   name: material
-  language: fr
+  language: en
   palette: 
-    # Mode sombre par defaut (c'est plus classe)
-    - scheme: slate 
-      primary: teal
-      accent: cyan
+    scheme: default 
+    primary: white
+    accent: deep purple
   features:
-    - navigation.tabs # Menu horizontal pro
-    - navigation.sections
-    - navigation.expand
-    - content.code.copy
+    - navigation.tabs        
+    - navigation.tabs.sticky 
+    - navigation.sections   
+    - navigation.top       
+    - toc.follow             
+  font:
+    text: Merriweather  
+    code: Roboto Mono   
+  favicon: assets/isc.png
 
-markdown_extensions:
-  - admonition # Pour les notes, avertissements, etc.
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.arithmatex: # Pour vos formules LaTeX
-      generic: true
+extra_css:
+  - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Home: index.md
+  - "Week 1": journal/week1.md
