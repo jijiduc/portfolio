@@ -1,4 +1,10 @@
-/* Hide the left sidebar — content is centered */
+/* Hide the left sidebar*/
 .md-sidebar--primary {
+    display: none;
+}
+
+/* Hide admonition icons */
+.md-typeset .admonition > .admonition-title::before,
+.md-typeset details > summary::before {
     display: none;
 }

@@ -8,21 +8,21 @@
 
 * **General planification**
     * *Action:* Took part in the general project planification to define milestones per week. 
-    * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/1787a64b540681b7a8b219607760a1050d72c1cd/docs/planning/steps_milestones.typ)
+    * *Artefacts:* [Document file (PDF)](https://toys-r-us-rex.github.io/Duckify/planning/steps_milestones.pdf)
     * *Justification:* It is necessary to have a plan of the general project evolution. This enable to anticipate difficult section to come, thus allowing to redistribute working force if needed. It also help to ensure that no unseen dependencies between teams are leftover.
     * *Skill related:* analysing a complex IT problem | communicate clearly and effectively
 ---
 
 * **Tracing team planification**
     * *Action:* Took part in the tracing team planification to lay out a pipeline overview. 
-    * *Artefacts:* [Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ)
+    * *Artefacts:* [Document file (PDF)](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/general-overview.pdf)
     * *Justification:* This overview is a 1rst step in the tracing pipeline construction. This lay out a complete road to follow.
     * *Skill related:* design a theoretical modelled solution
 ---
 
 * **Research**
-    * *Action:* Research a solution for texture projection solution, as this step was defined in the [General overview of the tracing process (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/058f40182c9abd4c097b731ee1d95ff6e53512c0/docs/architecture/tracing/general-overview.typ.)
-    * *Artefacts:* [Research report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/15c1dbc08bc9060aa37bc681666f70380cd02b3d/docs/research/projection_solution.typ)
+    * *Action:* Research a solution for texture projection solution, as this step was defined in the [General overview of the tracing process (PDF)](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/general-overview.pdf)
+    * *Artefacts:* [Research report file (PDF)](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf)
     * *Justification:* Taking time before implementation to look out for a complete solution 
     * *Result:* Promising solution found, tested but not selected
     * *Skill related:* Evaluate an IT system 
@@ -32,8 +32,8 @@
 * **Meeting report**
     * *Action:* Make a summary of a daily/weekly meeting
     * *Artefacts:*
-        * [Daily meeting report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/be49ae5f111835d253c54c89245da1a22305db2c/docs/meetings/2026-02-19.typ)
-        * [Weekly meeting report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/26aa4719fd0279bd80cab682a85882558017a31d/docs/meetings/weekly/2026-02-20.typ)
+        * [Daily meeting report file (PDF)](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-02-19.pdf)
+        * [Weekly meeting report file (PDF)](https://toys-r-us-rex.github.io/Duckify/meetings/ceo/pv-2026-02-26.pdf)
     * *Justification:* Need of documentation to have the overview of project evolution
     * *Skill related:* communicate clearly and effectively
 

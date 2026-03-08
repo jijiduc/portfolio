@@ -7,7 +7,7 @@
 ## Activities
 
 * **Tracing pipeline implementation**
-    * *Action:* Implements mulitples parts of the tracing pipeline defined in ([Document file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/pull/13))
+    * *Action:* Implements mulitples parts of the tracing pipeline defined in ([Document file (PDF)](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/general-overview.pdf))
     * *Artefacts:* [Class Tracer  (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py)
     * *Justification:* I worked more specifically on the following methods :
 
@@ -25,8 +25,7 @@
 * **CEO'meeting report**
     * *Action:* Produce the meeting with client report
     * *Artefacts:*
-        * [CEO meeting report (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/582da0495007ad2afa26e607f0742d6108c35fcf/docs/meetings/ceo/pv-2026-02-26.typ)
-        * [Weekly meeting report file (permalink Github)](https://github.com/Toys-R-Us-Rex/Duckify/blob/26aa4719fd0279bd80cab682a85882558017a31d/docs/meetings/weekly/2026-02-20.typ)
+        * [CEO meeting report (PDF)](https://toys-r-us-rex.github.io/Duckify/meetings/ceo/pv-2026-02-26.pdf)
     * *Justification:* Keeping trace of the content of a meeting with the CEO serve multiple purposes. First, it lay on paper commitment made from one of the parties during the meeting. This can for example, protect the team from a delivery that the client could refuse, if it's form was previously written as such in a report. Secondly, it serve also as self-reflexive tool to analyse points to refine for futur encounter.
     * *Skill related:* communicate clearly and effectively
 
@@ -77,6 +76,7 @@
 **Q2: How do you view a successful meeting with the client ?**
 
 **A:** The team arrive with the needed decisions ready to be presented to the client and get clear choices from him. That is vulgarized, sourced alternatives, with clear decision making path. The meeting is then successfull if every needed questions/decisions have been answered/made by the client and all of it is recorded in a report.
+
 ---
 
 **Q3: In a team effort involving 8 personn like this project, is an horizontal leadership a good way to lead the team toward completion ?**
