@@ -1,29 +1,28 @@
 site_name: Duc Jeremy | Portfolio
-site_url: https://github.com/jijiduc/portfolio/
 repo_url: https://github.com/Toys-R-Us-Rex/Duckify
 repo_name: Duckify
 
 theme:
   name: material
   language: en
-  palette: 
-    scheme: default 
-    primary: white
-    accent: deep purple
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
-    - navigation.tabs        
-    - navigation.tabs.sticky 
-    - navigation.sections   
-    - navigation.top       
-    - toc.follow             
-    - header.autohide
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.follow
   font:
-    text: Merriweather  
-    code: Roboto Mono   
-  favicon: assets/jd.jpg
-
-extra_css:
-  - stylesheets/extra.css
+    text: Inter
+    code: Roboto Mono
+  favicon: assets/logo.png
 
 nav:
   - Home: index.md
