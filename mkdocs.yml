@@ -35,24 +35,10 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Compétences: competences/index.md
   - Journal:
     - Overview: journal/index.md
     - Week 1: journal/week1.md
     - Week 2: journal/week2.md
     - Week 3: journal/week3.md
-  - Competences:
-    - Overview: competences/index.md
-    - CS Engineer:
-      - Analyse a complex problem: competences/cs/analyser.md
-      - Design a theoretical solution: competences/cs/concevoir.md
-      - Implement a theoretical approach: competences/cs/implementer.md
-      - Evaluate an IT system: competences/cs/evaluer.md
-    - Data Engineer:
-      - Leverage heterogeneous datasets: competences/data/valoriser.md
-      - Orchestrate a data pipeline: competences/data/orchestrer.md
-      - Apply CS skills to data: competences/data/appliquer.md
-    - Professionalism:
-      - Communicate clearly: competences/pro/communiquer.md
-      - Professional posture: competences/pro/posture.md
-      - Argue decisions: competences/pro/argumenter.md
-      - Self-reflection: competences/pro/reflexion.md
+    - Week 4: journal/week4.md

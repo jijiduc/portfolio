@@ -8,7 +8,7 @@
 
 * **Tracing pipeline implementation**
     * *Action:* Update of the palettization process
-    * *Artefacts:* [Commit link)](https://github.com/Toys-R-Us-Rex/Duckify/commit/029baa27dd0adeb881324274802aef5ff67be83d)
+    * *Artefacts:* [Commit link](https://github.com/Toys-R-Us-Rex/Duckify/commit/029baa27dd0adeb881324274802aef5ff67be83d)
 
 * **Plan of action documentation**
     * *Action:*  Contributions in the artefacts removals plan
