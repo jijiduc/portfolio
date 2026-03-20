@@ -6,7 +6,7 @@ Recensement des démonstrations des compétences demandées lors du projet **Duc
 
 ## Analyser un problème informatique complexe
 
-J'ai recherché des solutions existantes pour la problématique de la projection de texture sur modèle 3D. Le [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) en résultant démontre mon aptitude à comprendre la problématique et y trouver des solutions.
+J'ai recherché des solutions existantes pour la problématique de la projection de texture sur modèle 3D. Le [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) en résultant démontre ce travail.
 
 
 J'ai participé à la rédaction d'un plan structurant les modifications à apporter au pipeline de Tracing établit. Le [plan](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) démontre ma capacité à identifier les problèmes du pipeline et en apporter des solutions. Par exemple, que l'algorithme MEDIANCUT biaisait la palette en faveur de la couleur dominante (le noir du masque UV).
@@ -27,7 +27,7 @@ J'ai implémenté six méthodes de la classe `Tracer` (`load_texture`, `load_mod
 
 ## Evaluer un système informatique
 
-J'ai évalué TEXTurePaper comme potentielle solution à l'étape de projection de texture. Le [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) démontre mon évaluation couvrant (A mettre à jour : la compatibilité des dépendances, la disponibilité des modèles et le format de sortie — ayant conduit à la décision de ne pas retenir la solution.
+J'ai évalué TEXTurePaper comme potentielle solution à l'étape de projection de texture. La conclusion du [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) démontre les résultats de mon évaluation.
 
 J'ai comparé deux algorithmes de palettisation et établi que MEDIANCUT produit une palette biaisée par la couleur dominante, tandis que KNN garantit un poids égal à chaque couleur et supporte un paramètre d'exclusion. Cette évaluation, formalisée dans le [document](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf), c'est transcrite en une mise à jour du pipeline.
 
@@ -70,13 +70,13 @@ J'ai rédigé deux documents de planification technique lors de mise à jour du 
 
 Face à un problème de retards récurrents lors des daily meeting, j'ai pris la parole pour pointer le problème et proposé des alternatives à la forme actuelle. Au fond du [rapport du meeting](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-12.pdf), cette intervention est recensée.
 
-Face à un premier plan jugé insuffisant par mon collègue Louis, j'ai accepté positivement la critique et recommencé ce travail avec lui. Le [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) démontre ma capacité à prendre une posture professionelle face à un déconvenu sentimental.
+Face à un premier plan jugé insuffisant par mon collègue Louis, j'ai accepté positivement la critique et recommencé ce travail avec lui. Le [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) démontre ce changement et ma capacité à prendre une posture professionelle face à un déconvenu sentimental.
 
 ---
 
 ## Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
 
-J'ai argumenté contre l'adoption de TEXTurePaper en structurant mon analyse autour de critères objectifs : format de sortie inadapté, dépendances instables, modèles hébergés dépréciés, opacité de l'implémentation. Le rapport [projection_solution.pdf](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) formalise cet argumentaire.
+J'ai argumenté contre l'adoption de TEXTurePaper en structurant mon analyse autour de critères objectifs : format de sortie inadapté, dépendances inclaire, modèle hébergé disparu. Le rapport [projection_solution.pdf](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) contient mon argumentaire.
 
 J'ai argumenté le remplacement de MEDIANCUT par KNN en m'appuyant sur des faits techniques mesurables : biais par la couleur dominante, absence de paramètre d'exclusion, distribution déséquilibrée de la palette. L'argument est formalisé dans le [rapport](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf).
 
