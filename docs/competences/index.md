@@ -47,6 +47,7 @@ J'ai évalué le pipeline `ur3e-control` de la team robot en tant qu' externe. L
 J'ai conçu le traitement combinant une image de texture (2D) et un modèle 3D pour réduire l'espace colorimétrique vers une palette cible et décomposer la texture en couches par couleur. Les méthodes `palettize_texture()` et `split_colors()` dans [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py) montrent comment ces deux types de données hétérogènes sont mis en correspondance pour produire une représentation colorimétrique structurée et exploitable.
 
 J'ai utilisé Blender + pipeline de tracing → fichiers de sortie pour produire des datasets de traces utilisables par la team robot. ce faisant, valorisant les données dans le pipeline. Le résultat est disponible dans les [PR #82](https://github.com/Toys-R-Us-Rex/Duckify/pull/82) et [PR #99](https://github.com/Toys-R-Us-Rex/Duckify/pull/99), et démontrent ma capacité a valoriser des données.
+
 ---
 
 ## Orchestrer un processus et une infrastructure de traitement de données
