@@ -22,6 +22,11 @@
     * *Action:* From a demand by the team robot, create new motives in Blender then Traces files for tests with the robot, with new masks to only cover precise zone
     * *Artefacts:* [PR link](https://github.com/Toys-R-Us-Rex/Duckify/pull/99)
 
+* **Meeting report**
+    * *Action:* Make a summary of a daily meeting
+    * *Artefacts:*[Daily meeting report file (PDF)](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-25.pdf)
+
+
 * **Tracing pipeline stress-test**
     * *Action:* During the project, the tracing pipeline had multiples updates and debug phases since it's first implementation. At this point, the pipeline is for sure effective when used with the textures tested during our implementation work. To further tests and discover possible flaws, it should be further tested with new textures.
     * *Artefacts:* 

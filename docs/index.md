@@ -7,5 +7,5 @@ This portfolio documents my work within the **Duckify** startup simulation durin
 
 ## Structure
 
-- **Journal** — weekly log of activities, artifacts, blockers, reflections and the 3 hiring questions.
-- **Competences** — evidence-based pages grouping artifacts by competence
+- **Journal** — weekly log of my activities with artifacts, blockers, self-reflections and the 3 hiring questions.
+- **Competences** — evidence-based page grouping artifacts by competence
