@@ -1,101 +1,145 @@
 # Compétences
 
-Recensement des démonstrations des compétences demandées lors du projet **Duckify**.
+Démonstrations des compétences demandées lors du projet **Duckify**.
 
 ---
 
 ## Analyser un problème informatique complexe
 
-J'ai recherché des solutions existantes pour la problématique de la projection de texture sur modèle 3D. Le [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) en résultant démontre ce travail.
+J'ai analysé le problème de la projection de texture sur modèle 3D -> [rapport d'analyse de projection](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf)
 
-J'ai participé à la rédaction d'un plan structurant les modifications à apporter au pipeline de Tracing établit. Le [plan](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) démontre ma capacité à identifier les problèmes du pipeline et en apporter des solutions. Par exemple, que l'algorithme MEDIANCUT biaisait la palette en faveur de la couleur dominante (le noir du masque UV).
+J'ai analyés les problèmes de `small artefacts` - `color quantization` - `Fill slicing` liées au pipeline de tracing établit originellement -> [rapport d'analyse du pipeline](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
+
+J'ai analysé le problème du nombres du points par traces trop élevé -> [rapport d'analyse](lienamettre)
+
+J'ai analysé le problème issue de l'implémentationde la réduction du nombre de points par trace -> [rapport de debug](lienamettre)
+
+J'ai identifié la source de traces sautant d'un bloc à l'autre de la UV map -> [rapport de debug](lienamettre)
 
 ---
 
 ## Concevoir une solution théorique modélisée
 
-J'ai participé à la conception du pipeline de tracing en définissant pour chaque étape les entrées/sorties et leur enchaînement. Le problème est pluridisciplinaire : il croise la géométrie 3D (UV maps, mesh), le traitement d'image (espace colorimétrique, texture) et les contraintes robotiques (taille minimale des îlots traçables, nombre de points par contour). Le [document](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/general-overview.pdf) recense cette modélisation initiale.
+J'ai participé à la conception globale du pipeline de tracing -> [plan de conception globale](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/general-overview.pdf)
 
-J'ai participé à la révision du pipeline après identification de modifications à faire comme le biais de palettisation ou la présence det petits artefacts. Le [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) présente cette modélisation, démontrant ma capacité à faire évoluer un modèle et a rechercher et justifier les changements.
+J'ai participé à la conception technique détaillée du pipeline de tracing -> [plan de conception détaillée](https://toys-r-us-rex.github.io/Duckify/architecture/tracing_algo.pdf)
+
+J'ai participé à la révision du pipeline de tracing et ai conçu une solution aux problèmes de  `small artefacts` - `color quantization` - `Fill slicing` -> [plan de la révision](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
+
+J'ai conçu deux approches complémentaires pour le problème de la réduction de points -> [rapport d'analyse](lienamettre)
+
+J'ai conçu un correctif au problème des traces sautant d'un bloc à l'autre de la UV map -> [rapport de debug](lienamettre)
 
 ---
 
 ## Implémenter une approche théorique modélisée
 
-J'ai implémenté six méthodes de la classe `Tracer` (`load_texture`, `load_model`, `palettize_texture`, `split_colors`, `compute_fill_slices`, `format_palette`) conformément à l'architecture prédéfinie. Le fichier du code implémenté, [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py), démontre ma capacité à transposer d'un modèle théorique à l'implémentation.
+J'ai implémenté des méthodes du pipeline de tracing `Tracer` (`load_texture`, `load_model`, `palettize_texture`, `split_colors`, `compute_fill_slices`, `format_palette`) -> [code source](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py)
 
-J'ai corrigé les bugs de fill slicing et ai enlevés les artefacts de couleur indésirables afin d'éviter que le pipeline ne génère des îlots trop petits/non traçables avec les feutres. Ces corrections sont explicitées dans la [PR #74](https://github.com/Toys-R-Us-Rex/Duckify/pull/74).
+J'ai implémenté des correctifs au pipeline de tracing concernant les problèmes de `small artefacts` - `color quantization` - `Fill slicing` -> [PR #74 (small artefacts & fill slicing)](https://github.com/Toys-R-Us-Rex/Duckify/pull/74) + [PR #65 (color quantization)](https://github.com/Toys-R-Us-Rex/Duckify/pull/65)
 
-J'ai remappé la disposition des UV du modèle canard pour garantir une séparation suffisante entre les blocs UV, conformément aux contraintes du pipeline de tracing. Cette modification est disponible dans la [PR #90](https://github.com/Toys-R-Us-Rex/Duckify/pull/90).
+J'ai remappé la disposition des UV du modèle canard -> [PR #90](https://github.com/Toys-R-Us-Rex/Duckify/pull/90).
 
-J'ai réduit le nombre de points par trace à la demande de la team robot. Cette modification est explicite dans la [PR #92](https://github.com/Toys-R-Us-Rex/Duckify/pull/92), et la correction du bug résultant dans la [PR #96](https://github.com/Toys-R-Us-Rex/Duckify/pull/96).
+J'ai implémenter la réduction du nombre de points par trace -> [PR #92](https://github.com/Toys-R-Us-Rex/Duckify/pull/92) 
+
+J'ai corrigé le bug résultant de l'implémentation de la réduction du nombre de points par trace ->  [PR #96](https://github.com/Toys-R-Us-Rex/Duckify/pull/96)
+
+J'ai réarrangé la UV map -> [rapport de debug](lienamettre)
 
 ---
 
 ## Evaluer un système informatique
 
-J'ai évalué TEXTurePaper comme potentielle solution à l'étape de projection de texture. La conclusion du [rapport](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) démontre les résultats de mon évaluation.
+J'ai évalué le TEXTurePaper -> [rapport d'évaluation TEXTure](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf)
 
-J'ai comparé deux algorithmes de palettisation et établi que MEDIANCUT produit une palette biaisée par la couleur dominante, tandis que KNN garantit un poids égal à chaque couleur et supporte un paramètre d'exclusion. Cette évaluation, disponible dans le [document](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf), s'est ensuite transcrite en une mise à jour du pipeline.
+J'ai comparé deux algorithmes de palettisation (MEDIANCUT vs KNN ) -> [rapport de comparaison](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
 
-J'ai évalué le pipeline `ur3e-control` de la team robot en tant qu' externe. Le [rapport](https://toys-r-us-rex.github.io/Duckify/architecture/robot/audit/2026-03-18.pdf) démontre ma capacité d'évaluation dans un environnement nouveau.
+J'ai évalué et rejeté l'approche par blurring pour le problème de `small artefacts` -> [rapport de comparaison](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
+
+J'ai évalué et validé les corrections aux problèmes de `small artefacts` & `Fill slicing` -> [rapport de comparaison](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) + [PR #74 (small artefacts & fill slicing)](https://github.com/Toys-R-Us-Rex/Duckify/pull/74)
+
+J'ai évalué le pipeline `ur3e-control` de la team robot -> [rapport d'évaluation de `ur3e-control`](https://toys-r-us-rex.github.io/Duckify/architecture/robot/audit/2026-03-18.pdf)
+
+J'ai évalué l'effet de la réduction du nombre de points par trace  -> [rapport d'analyse](lienamettre)
 
 ---
 
 ## Valoriser des ensembles de données hétérogènes et multimodales
 
-J'ai conçu le traitement combinant une image de texture (2D) et un modèle 3D pour réduire l'espace colorimétrique vers une palette cible et décomposer la texture en couches par couleur. Les méthodes `palettize_texture()` et `split_colors()` dans [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py) montrent comment ces deux types de données hétérogènes sont mis en correspondance pour produire une représentation colorimétrique structurée et exploitable.
+J'ai contribué à la valorisation de textures 2D et modèles 3D à l'aide du pipeline de tracing -> [par exemple avec `palettize_texture()`, `split_colors()` dans tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py)
 
-J'ai utilisé Blender + pipeline de tracing → fichiers de sortie pour produire des datasets de traces utilisables par la team robot. ce faisant, valorisant les données dans le pipeline. Le résultat est disponible dans les [PR #82](https://github.com/Toys-R-Us-Rex/Duckify/pull/82) et [PR #99](https://github.com/Toys-R-Us-Rex/Duckify/pull/99), et démontrent ma capacité a valoriser des données.
+J'ai produit un datasets de traces `.json` exploitables par la team robot depuis des Blender/GenAI generated textures à l'aide du pipeline de tracing -> [permalink du dataset](https://github.com/Toys-R-Us-Rex/Duckify/tree/225b5667aa85d8fd0943a80ceb476a10f64c6247/assets/tests)
 
 ---
 
 ## Orchestrer un processus et une infrastructure de traitement de données
 
-J'ai structuré le pipeline de tracing au sein de la classe `Tracer` en définissant le flux de données d'entrées (texture, modèle) à aux sorties (palettes, slices). Le fichier [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py) démontre cette organisation du flux via les méthodes `load_texture`, `load_model`, `compute_fill_slices` et `format_palette`.
+J'ai participé à l'orchestraion d'un pipeline de tracing complet. De la collecte (load_texture, load_model), nettoyage (mask_outside_UV_texture, clean_island)
+traitement (palettize_texture, detect_islands, compute_fill_slices) et projection 3D -> [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py)
 
-J'ai sélectionné la méthode KNN pour la mise à jour de la palettization en justifiant dans le [document suivant](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf). Ceci reflète ma capacité a sélectionné une méthode adéquate et à le justifier.
+J'ai sélectionné et justifié le choix de la méthode KNN pour la palettisation -> [rapport](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
 
 ---
 
 ## Appliquer les compétences de l'ingénierie en informatique au domaine des données
 
-J'ai appliqué les principes de la programmation orientée objet — encapsulation, paramétrage des variables, absence de valeurs hardcodées, fichier de configuration — à la classe `Tracer`. Le fichier [tracer.py](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py) illustre ces bonnes pratiques d'ingénierie appliquées à un pipeline de données.
+J'ai appliqué les principes POO à la classe `Tracer`, encapsulation, paramétrage, configuration externalisée, pas de valeurs hardcodées -> [class Tracer](https://github.com/Toys-R-Us-Rex/Duckify/blob/ea67d8677b94415608ee8e75b3b0258242b4d44f/tracing/tracer.py)
 
 ---
 
 ## Communiquer clairement et efficacement
 
-J'ai rédigé les comptes-rendus des daily meeting du [19.02.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-02-19.pdf), du [03.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-03.pdf) et du [25.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-25.pdf). Le second adopte un style plus concis pour éviter de surcharger le rapport. Le troisième démontre un effort sur la captation des échanges annexes au sujet principal, afin de retranscrire les discussions relevantes.
+J'ai rédigé des rapports des daily meeting avec une évolution de mon style vers du moins verbeux et la captation de commentaires -> [le 19.02.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-02-19.pdf), [le 03.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-03.pdf) et [le 25.03.2026](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-25.pdf)
 
-J'ai rédigé le procès-verbale de la réunion avec le client [pv-2026-02-26.pdf](https://toys-r-us-rex.github.io/Duckify/meetings/ceo/pv-2026-02-26.pdf). Ce document démontre ma capacité à synthétiser de manière constreinte le déroulé et les décisions du meeting.
+J'ai rédigé le procès-verbale de la réunion avec le client -> [pv-2026-02-26.pdf](https://toys-r-us-rex.github.io/Duckify/meetings/ceo/pv-2026-02-26.pdf)
 
-J'ai rédigé deux documents de planification technique lors de mise à jour du pipeline de tracing: un [plan initial](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/artefacts-removal.pdf) puis un [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)(rédigé avec Louis) après intégration de son retour. L'évolution du style montre une progression vers un style moins verbeux et plus technique.
+J'ai rédigé deux documents de mise à jour du pipeline de tracing -> un [plan initial](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/artefacts-removal.pdf) jugé insuffisant puis un [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
 
-À la fin de chaque semaine, j'ai présenté mon travail au sein de la team tracing en exposant les avancées, les blockers rencontrés et les résolutions adoptées. Les présentations des [semaines 2](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf), [3](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf), [4](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf) et [5](https://toys-r-us-rex.github.io/Duckify/presentations/20200320_duckify_meeting_week_5.pdf) démontrent ma capacité à prendre du recul sur mon travail et à identifier les éléments blockers.
+J'ai présenté mes contributions lors des meetings hebdomadaires avec le CTO -> [semaine 1](https://toys-r-us-rex.github.io/Duckify/presentations/20260220_duckify_meeting_week_1.pdf), [semaine 2](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf), [semaine 3](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf), [semaine 4](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf), [semaine 5](https://toys-r-us-rex.github.io/Duckify/presentations/20260320_duckify_meeting_week_5.pdf) et [semaine 6](https://toys-r-us-rex.github.io/Duckify/presentations/20260327_duckify_meeting_week_6.pdf)
+
+J'ai formulé des demandes de changement lors de PRs -> [PR #68](https://github.com/Toys-R-Us-Rex/Duckify/pull/68), [PR #18](https://github.com/Toys-R-Us-Rex/Duckify/pull/18) et [PR #15](https://github.com/Toys-R-Us-Rex/Duckify/pull/15)
 
 ---
 
 ## Adopter une posture professionnelle facilitante face aux situations rencontrées
 
-Face à un problème de retards récurrents lors des daily meeting, j'ai pris la parole, en tant que chef de la semaine, pour le pointer et proposer des alternatives au fonctionnement actuel. Au fond du [rapport du meeting](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-12.pdf), cette intervention est recensée et mon rôle de chef de la semaine est notifié.
+Face à un problème de retards récurrents lors des daily meeting, j'ai pris la parole en tant que chef du projet -> [au fond du rapport du meeting](https://toys-r-us-rex.github.io/Duckify/meetings/daily/2026-03-12.pdf) + [preuve de chef de la semaine](https://toys-r-us-rex.github.io/Duckify/meetings/weekly/2026-03-06.pdf)
 
-Face à un premier plan établit, jugé insuffisant par mon collègue Louis, j'ai accepté positivement la critique et recommencé ce travail avec lui. Le [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) démontre ce changement et ma capacité à garder une posture professionelle face à un avis contraire.
+Face à un premier plan de mise à jour du pipeline de tracing jugé insuffisant par mon collègue Louis, j'ai accepté positivement la critique et ai recommencé avec lui -> [plan initiale](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/artefacts-removal.pdf) vs [plan révisé](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf) / [PR #53 abandonnée](https://github.com/Toys-R-Us-Rex/Duckify/pull/53)
 
-Sollicité pour intervenir dans la team robot en tant qu'externe, je me suis adapté a un environement différent. J'ai d'abord pris contact avec les membres de l'équipe pour clarifier les attentes, puis ai parcouru le pipeline de manière autonome tout en sollicitant de l'aide sur les points à clarifer. Cette capacité d'adaptation à un contexte inconnu est relatée dans les [hiring questions de la semaine 5](../journal/week5.md) et le [rapport](https://toys-r-us-rex.github.io/Duckify/architecture/robot/audit/2026-03-18.pdf) prouve l'existence de ce travail.
+Sollicité pour intervenir dans la team robot en tant qu'externe, je me suis adapté a un environement inconnu pour produire un document d'analyse de leur pipeline -> [posture décrite dans les hiring questions de la semaine 5](../journal/week5.md) + [rapport d'analyse](https://toys-r-us-rex.github.io/Duckify/architecture/robot/audit/2026-03-18.pdf)
 
+J'ai pris en compte les remarques de PR review et ai implémenté les changements demandés -> [PR #7](https://github.com/Toys-R-Us-Rex/Duckify/pull/7), [PR #24](https://github.com/Toys-R-Us-Rex/Duckify/pull/24), [PR #32](https://github.com/Toys-R-Us-Rex/Duckify/pull/32), [PR #41](https://github.com/Toys-R-Us-Rex/Duckify/pull/41), [PR #42](https://github.com/Toys-R-Us-Rex/Duckify/pull/42), [PR #65](https://github.com/Toys-R-Us-Rex/Duckify/pull/65) et [PR #74](https://github.com/Toys-R-Us-Rex/Duckify/pull/74)
+
+J'ai review des PRs contribuant ainsi a clôturer le travail de mes collègues pour faire avancer le projet -> [PR #2](https://github.com/Toys-R-Us-Rex/Duckify/pull/2), [PR #3](https://github.com/Toys-R-Us-Rex/Duckify/pull/3), [PR #14](https://github.com/Toys-R-Us-Rex/Duckify/pull/14), [PR #15](https://github.com/Toys-R-Us-Rex/Duckify/pull/15), [PR #17](https://github.com/Toys-R-Us-Rex/Duckify/pull/17), [PR #18](https://github.com/Toys-R-Us-Rex/Duckify/pull/18), [PR #20](https://github.com/Toys-R-Us-Rex/Duckify/pull/20), [PR #21](https://github.com/Toys-R-Us-Rex/Duckify/pull/21), [PR #22](https://github.com/Toys-R-Us-Rex/Duckify/pull/22), [PR #27](https://github.com/Toys-R-Us-Rex/Duckify/pull/27), [PR #33](https://github.com/Toys-R-Us-Rex/Duckify/pull/33), [PR #35](https://github.com/Toys-R-Us-Rex/Duckify/pull/35), [PR #39](https://github.com/Toys-R-Us-Rex/Duckify/pull/39), [PR #40](https://github.com/Toys-R-Us-Rex/Duckify/pull/40), [PR #50](https://github.com/Toys-R-Us-Rex/Duckify/pull/50), [PR #54](https://github.com/Toys-R-Us-Rex/Duckify/pull/54), [PR #55](https://github.com/Toys-R-Us-Rex/Duckify/pull/55), [PR #56](https://github.com/Toys-R-Us-Rex/Duckify/pull/56), [PR #59](https://github.com/Toys-R-Us-Rex/Duckify/pull/59), [PR #68](https://github.com/Toys-R-Us-Rex/Duckify/pull/68), [PR #72](https://github.com/Toys-R-Us-Rex/Duckify/pull/72), [PR #73](https://github.com/Toys-R-Us-Rex/Duckify/pull/73), [PR #86](https://github.com/Toys-R-Us-Rex/Duckify/pull/86), [PR #97](https://github.com/Toys-R-Us-Rex/Duckify/pull/97), [PR #101](https://github.com/Toys-R-Us-Rex/Duckify/pull/101), [PR #102](https://github.com/Toys-R-Us-Rex/Duckify/pull/102), [PR #106](https://github.com/Toys-R-Us-Rex/Duckify/pull/106)
+
+Après avoir trouvé un bug issue de mes changements, j'ai assumé la responsabilité de le diagnostiquer et le corriger -> [PR #96](https://github.com/Toys-R-Us-Rex/Duckify/pull/96)
 ---
 
 ## Argumenter ses opinions et ses choix lors de processus décisionnels et stratégiques
 
-J'ai argumenté contre l'adoption de TEXTurePaper en structurant mon analyse autour de critères objectifs : format de sortie inadapté, dépendances inclaire, modèle hébergé disparu. Le rapport [projection_solution.pdf](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf) contient mon argumentaire.
+J'ai argumenté contre l'adoption de TEXTurePaper -> [rapport d'analyse de TEXTurePaper](https://toys-r-us-rex.github.io/Duckify/research/projection_solution.pdf)
 
-J'ai argumenté le remplacement de MEDIANCUT par KNN en m'appuyant sur des faits techniques mesurables : biais par la couleur dominante, absence de paramètre d'exclusion, distribution déséquilibrée de la palette. L'argument est formalisé dans le [rapport](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf).
+J'ai argumenté le remplacement de MEDIANCUT par KNN -> [rapport d'analyse](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
+
+J'ai argumenté le rejet du blur comme solution au problème de `small artefacts` -> [rapport d'analyse](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
+
+J'ai argumenté l'impact des changements de la disposition de la UV map en réponse au questionnement d'un collègue -> [commentaires de la PR #90](https://github.com/Toys-R-Us-Rex/Duckify/pull/90)
+
+J'ai postulé l'impact de la réduction du nombre de points par traces -> [rapport d'analyse](lienamettre)
 
 ---
 
 ## Critiquer le déroulement d'une production de manière auto-réflexive
 
-À la fin de chaque semaine, j'ai présenté mon travail au sein de la team tracing en exposant les avancées, les blockers rencontrés et les résolutions adoptées. Les présentations des [semaines 2](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf), [3](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf), [4](https://toys-r-us-rex.github.io/Duckify/presentations/20260313_duckify_meeting_week_4.pdf) et [5](https://toys-r-us-rex.github.io/Duckify/presentations/20200320_duckify_meeting_week_5.pdf) démontrent ma capacité à prendre du recul sur mon travail et à identifier les éléments blockers.
+J'ai formulé une critique du pipeline de tracing et de sa mise à jour-> [au fond du document](https://toys-r-us-rex.github.io/Duckify/architecture/tracing/improvements.pdf)
 
-Chaque semaine, j'ai rédigé dans ce portfolio une section de self-reflection expliquant ce qui s'est bien passé, ce qui pourrait être amélioré et ce qui a été appris. Les entrées des [semaines 1](../journal/week1.md), [2](../journal/week2.md), [3](../journal/week3.md), [4](../journal/week4.md), [5](../journal/week5.md) et [6](../journal/week6.md) constituent une trace écrite de ma capacité à m'auto-analyser et à en tirer des leçons.
+J'ai apporté une critique de mon travail lors de présentations hebdomadaires au CTO -> [semaine 2 (slides 8 et 12)](https://toys-r-us-rex.github.io/Duckify/presentations/20260227_duckify_meeting_week_2.pdf), [semaine 3 (slide 11)](https://toys-r-us-rex.github.io/Duckify/presentations/20260306_duckify_meeting_week_3.pdf), [semaine 6 (slide 13 et 19)](https://toys-r-us-rex.github.io/Duckify/presentations/20260327_duckify_meeting_week_6.pdf)
+
+Chaque semaine, j'ai rédigé dans ce portfolio mes self-reflections -> [semaine 1](../journal/week1.md), [semaine 2](../journal/week2.md), [semaine 3](../journal/week3.md), [semaine 4](../journal/week4.md), [semaine 5](../journal/week5.md) et [semaine 6](../journal/week6.md)
+
+J'ai formulé une critique de la réduction de points par trace -> [rapport d'analyse](lienamettre)
+
+J'ai formulé une critique de mon implémentation de la réduction du nombre de points par traces et de ses conséquence -> [rapport de debug](lienamettre)
+
+J'ai formulé une critique sur mon processus de résolution du problème de la UV map -> [rapport de debug](lienamettre)
