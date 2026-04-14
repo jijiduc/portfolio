@@ -75,4 +75,3 @@
 
 **A:** My view is that it depends of the nature of the changes. For fixes, chores or minors changes, a good documented PR should be sufficient. However, when the pipeline is majorly impacted or when the changes will impact other teams, it should be documented on a report, justified, critized and have been reviewed from impacted team members ideally. This to ensure that no loop-holes was missed.
 
-

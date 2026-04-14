@@ -65,4 +65,3 @@
 
 **A:** I first took contact with team members to get a first overview and make sure to understand their expectations. I then continue by going through the pipeline as it would be executed, to increase my understanding. In a second pass, I took more time to understand some unclear sections, with when needed help from team members to facilitate the process. During the whole process I took note of questions and interesting points for my mission.
 
-

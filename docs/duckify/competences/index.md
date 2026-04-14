@@ -104,7 +104,7 @@ J'ai présenté mes contributions lors des meetings hebdomadaires avec le CTO ->
 
 J'ai formulé des demandes de changement lors de PRs -> [PR #68](https://github.com/Toys-R-Us-Rex/Duckify/pull/68), [PR #18](https://github.com/Toys-R-Us-Rex/Duckify/pull/18) et [PR #15](https://github.com/Toys-R-Us-Rex/Duckify/pull/15)
 
-J'ai réalisé un montage vidéo pour le site du projet (impression 3d) -> [commit](https://github.com/Toys-R-Us-Rex/promotion-website/commit/8dc31319465fc11b26af4f02113c253841af5b52) / [vidéo](../assets/accelerated_duck_3d_impression.mp4)
+J'ai réalisé un montage vidéo pour le site du projet (impression 3d) -> [commit](https://github.com/Toys-R-Us-Rex/promotion-website/commit/8dc31319465fc11b26af4f02113c253841af5b52) / [vidéo](../../assets/accelerated_duck_3d_impression.mp4)
 
 ---
 

@@ -64,4 +64,3 @@ primary color in the texture, which "floods" the other colors when palettized. I
     1. The main background color (in our pipeline the black, as the mask of the UV is applied on the texture before the palettization) isn't taken in account in the palette during palettization
     2. There is no more flooding of a biaised color weight. Using CNN ensure that every color as same weight.
 
-
